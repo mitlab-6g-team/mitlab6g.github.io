@@ -1,4 +1,3 @@
-# mitlab6g.github.io
 # 推論系統的架構
 
 # 推論系統
