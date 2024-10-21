@@ -1,7 +1,7 @@
 # Comprehensive Rust
 
 ## 目錄
-- [Comprehensive Rust](#comprehensive-rust)
+- [Comprehensive Rust](deployment_platform.md)
   - [目錄](#目錄)
   - [Running the Course](#running-the-course)
   - [Using Cargo](#using-cargo)
