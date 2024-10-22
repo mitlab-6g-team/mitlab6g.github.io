@@ -19,14 +19,21 @@ jobs:
       - name: build image for gitbook instruction
         run: |
           docker build . -t gitbook-server:latest
+      
+      - name: create container volume folder
+        run: |
+          mkdir -p gitbook
+          mv README.md gitbook/SUMMARY.md
+          mv README.md gitbook/README.md
+          bash mv_folder.sh
 
       - name: install gitbook-plugins
         run: |
-          docker run --rm -v "$PWD:/gitbook" gitbook-server gitbook install
+          docker run --rm -v "$PWD/gitbook:/gitbook" gitbook-server gitbook install
 
       - name: compile books
         run: |
-          docker run --rm -v "$PWD:/gitbook" gitbook-server gitbook build
+          docker run --rm -v "$PWD/gitbook:/gitbook" gitbook-server gitbook build
 
       - name: push _book to branch gitbook_source
         env:
@@ -35,10 +42,9 @@ jobs:
           MYEMAIL: talon6605@gmail.com
           MYNAME: Fail-Man
         run: |
+          cd gitbook
           sudo chmod 777 -R _book
           cd _book
-          sudo rm -R .github
-          sudo rm Dockerfile
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
