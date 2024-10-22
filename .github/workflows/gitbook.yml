@@ -16,24 +16,17 @@ jobs:
         with:
           ref: main
 
-      - name: Rename directory
-        env:
-            github_repository_name: ${{ github.event.repository.name }}
-        run: |
-          ls
-          mv ${github_repository_name} not_compiled_books
-
       - name: build image for gitbook instruction
         run: |
           docker build . -t gitbook-server:latest
 
       - name: install gitbook-plugins
         run: |
-          docker run --rm -v "$PWD/not_compiled_books:/gitbook" gitbook-server gitbook install
+          docker run --rm -v "$PWD:/gitbook" gitbook-server gitbook install
 
       - name: compile books
         run: |
-          docker run --rm -v "$PWD/not_compiled_books:/gitbook" gitbook-server gitbook build
+          docker run --rm -v "$PWD:/gitbook" gitbook-server gitbook build
 
       - name: push _book to branch gitbook_source
         env:
@@ -41,7 +34,7 @@ jobs:
           MYEMAIL: talon6605@gmail.com
           MYNAME: Fail-Man
         run: |
-          cd $PWD/not_compiled_books/_book
+          cd _book
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
