@@ -3,7 +3,8 @@
         "expandable-chapters",
         "chapter-fold",
         "splitter",
-        "hide-element"
+        "hide-element",
+        "copy-code-button"
     ],
     "pluginsConfig": {
         "hide-element": {
