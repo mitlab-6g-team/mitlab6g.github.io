@@ -2,7 +2,7 @@
 
 
 for dir in */; do
-  if [ "$dir" != ".github/" ]; then
+  if [ "$dir" != ".github/" ] && [ "$dir" != "gitbook/" ]; then
     mv "$dir" gitbook/
   fi
 done

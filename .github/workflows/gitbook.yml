@@ -23,7 +23,7 @@ jobs:
       - name: create container volume folder
         run: |
           mkdir -p gitbook
-          mv README.md gitbook/SUMMARY.md
+          mv SUMMARY.md gitbook/SUMMARY.md
           mv README.md gitbook/README.md
           bash mv_folder.sh
 
