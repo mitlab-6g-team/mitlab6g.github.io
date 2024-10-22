@@ -30,6 +30,7 @@ jobs:
 
       - name: push _book to branch gitbook_source
         env:
+          TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
           REF: github.com/${{github.repository}}
           MYEMAIL: talon6605@gmail.com
           MYNAME: Fail-Man
@@ -39,8 +40,7 @@ jobs:
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
-          git remote add origin https://${REF}
           git add . 
           git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
           git branch -M main
-          git push --force --quiet "https://${REF}" main:gitbook_source
+          git push --force --quiet "https://${TOKEN}@${REF}" main:gitbook_source
