@@ -1,0 +1,645 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>抽象類別階層 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../inference_host/" />
+    
+    
+    <link rel="prev" href="deployment.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    平台介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    推論系統
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    系統架構
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="architecture.html">
+            
+                <a href="architecture.html#部屬平台（deployment-platform）">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="architecture.html">
+            
+                <a href="architecture.html#邊緣伺服器（edge-server）">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="system_requirement.html">
+            
+                <a href="system_requirement.html">
+            
+                    
+                    系統需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="system_requirement.html">
+            
+                <a href="system_requirement.html#部屬平台（deployment-platform）">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="system_requirement.html">
+            
+                <a href="system_requirement.html#邊緣伺服器（edge-server）">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    部屬系統
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="deployment.html">
+            
+                <a href="deployment.html#deployment-platform-部屬">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="deployment.html">
+            
+                <a href="deployment.html#edge-server-部署">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="abstract_class_hierarchy.html">
+            
+                <a href="abstract_class_hierarchy.html">
+            
+                    
+                    抽象類別階層
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../inference_host/">
+            
+                <a href="../inference_host/">
+            
+                    
+                    Inference Host
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../inference_host/about_inference_host.html">
+            
+                <a href="../inference_host/about_inference_host.html">
+            
+                    
+                    關於 Inference Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html">
+            
+                    
+                    建置 Inference Host
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html#我可以在哪裡獲取範本？">
+            
+                    
+                    我可以在哪裡獲取範本？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html#如何實作推論功能？">
+            
+                    
+                    如何實作推論功能？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html#啟動-django-伺服器時的自檢功能">
+            
+                    
+                    啟動 Django 伺服器時的自檢功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html#我的推論-api-的路徑是什麼？">
+            
+                    
+                    我的推論 API 的路徑是什麼？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../inference_host/build_inference_host.html">
+            
+                <a href="../inference_host/build_inference_host.html#不使用sdk的api文件">
+            
+                    
+                    不使用SDK的API文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../xApp_rApp/">
+            
+                <a href="../xApp_rApp/">
+            
+                    
+                    xApp/rApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../xApp_rApp/about_xApp_rApp.html">
+            
+                <a href="../xApp_rApp/about_xApp_rApp.html">
+            
+                    
+                    關於 xApp/rApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../xApp_rApp/build_xApp_rApp.html">
+            
+                <a href="../xApp_rApp/build_xApp_rApp.html">
+            
+                    
+                    建置 xApp/rApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user_manual/">
+            
+                <a href="../user_manual/">
+            
+                    
+                    使用手冊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue/">
+            
+                <a href="../issue/">
+            
+                    
+                    常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >抽象類別階層</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x62BD;&#x8C61;&#x985E;&#x5225;&#x968E;&#x5C64;">&#x62BD;&#x8C61;&#x985E;&#x5225;&#x968E;&#x5C64;</h1>
+<p>&#x7121;&#x8AD6;&#x662F;&#x8A13;&#x7DF4;&#x5E73;&#x53F0;&#x9084;&#x662F;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x62BD;&#x8C61;&#x985E;&#x5225;&#x9032;&#x884C;&#x7BA1;&#x7406;&#x3002;&#x900F;&#x904E;&#x9019;&#x7A2E;&#x5C64;&#x7D1A;&#x7D50;&#x69CB;&#xFF0C;&#x6A21;&#x578B;&#x7684;&#x751F;&#x547D;&#x9031;&#x671F;&#x548C;&#x63A8;&#x7406;&#x6D41;&#x7A0B;&#x80FD;&#x5920;&#x6709;&#x5E8F;&#x9032;&#x884C;&#x3002;</p>
+<p><img src="images/abstract_class.png" alt="Abstract Class"></p>
+<h3 id="projects"><strong>Projects</strong></h3>
+<p>&#x5C08;&#x6848;&#xFF08;Projects&#xFF09;&#x662F;&#x4E00;&#x500B;&#x9802;&#x5C64;&#x7684;&#x62BD;&#x8C61;&#x985E;&#x5225;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x7D44;&#x7E54;&#x4E2D;&#x7531;&#x5C08;&#x6848;&#x7D93;&#x7406;&#x7BA1;&#x7406;&#x7684;&#x591A;&#x500B;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x3002;</p>
+<h3 id="applications"><strong>Applications</strong></h3>
+<p>&#x61C9;&#x7528;&#xFF08;Applications&#xFF09;&#x662F;&#x5C08;&#x6848;&#x4E2D;&#x7684;&#x4E00;&#x500B;&#x62BD;&#x8C61;&#x985E;&#x5225;&#xFF0C;&#x7528;&#x4F86;&#x5340;&#x5206;&#x4E0D;&#x540C;&#x7684;&#x76EE;&#x6A19;&#xFF0C;&#x4F8B;&#x5982;&#x540C;&#x5C6C;&#x7121;&#x4EBA;&#x6A5F;&#x5C08;&#x6848;&#x4E4B;&#x9418;&#x7684;&#x7121;&#x4EBA;&#x6A5F;&#x8DEF;&#x5F91;&#x9810;&#x6E2C;&#x6216;&#x7121;&#x4EBA;&#x6A5F;&#x96FB;&#x6C60;&#x9810;&#x6E2C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x76F8;&#x540C;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x5167;&#x9078;&#x64C7;&#x8868;&#x73FE;&#x6700;&#x4F73;&#x7684;&#x6A21;&#x578B;&#x3002;</p>
+<h3 id="positions"><strong>Positions</strong></h3>
+<p>&#x4F4D;&#x7F6E;&#xFF08;Positions&#xFF09;&#x662F;&#x4E00;&#x500B;&#x5728;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x4E0A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x985E;&#x5225;&#x3002;&#x5B83;&#x76F8;&#x5C0D;&#x65BC;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x800C;&#x8A00;&#x662F;&#x76F8;&#x7576;&#x7368;&#x7ACB;&#x7684;&#xFF0C;&#x9019;&#x610F;&#x5473;&#x8457;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x548C;&#x908A;&#x7DE3;&#x4F3A;&#x670D;&#x5668;&#x53EF;&#x4EE5;&#x5206;&#x5225;&#x5EFA;&#x7F6E;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x865B;&#x64EC;&#x6A5F;&#x751A;&#x81F3;&#x4E0D;&#x540C;&#x7684;&#x5BE6;&#x9AD4;&#x4F3A;&#x670D;&#x5668;&#x4E0A;&#x3002;&#x4F4D;&#x7F6E;&#x7684;&#x7279;&#x6027;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x80FD;&#x5920;&#x5C07;&#x6A21;&#x578B;&#x90E8;&#x7F72;&#x81F3;&#x9760;&#x8FD1;xApp&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x7684;&#x908A;&#x7DE3;&#x4F3A;&#x670D;&#x5668;&#x3002;</p>
+<p>Positions&#x7684;&#x76EE;&#x6A19;&#x6709;&#x4E0B;&#x5217;&#x5E7E;&#x9EDE;&#xFF1A;</p>
+<ul>
+<li>&#x964D;&#x4F4E;&#x90E8;&#x5C6C;&#x6642;&#x9593;</li>
+<li>&#x5206;&#x985E;&#x6574;&#x500B;&#x63A8;&#x8AD6;&#x670D;&#x52D9;</li>
+<li>&#x76E3;&#x6E2C;&#x63A8;&#x8AD6;&#x4EFB;&#x52D9;&#x7684;&#x72C0;&#x614B;&#x8207;&#x751F;&#x547D;&#x9031;&#x671F;</li>
+</ul>
+<p><strong>&#x88DC;&#x5145;&#x8CC7;&#x8A0A;</strong></p>
+<p>&#x4F4D;&#x7F6E;&#xFF08;Position&#xFF09;&#x65E2;&#x4E0D;&#x662F;&#x6A94;&#x6848;&#x4E5F;&#x4E0D;&#x662F;Process&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x500B;&#x7531;&#x591A;&#x500B;Process&#x7D44;&#x6210;&#x7684;&#x63A8;&#x8AD6;&#x670D;&#x52D9;&#x3002;&#x9019;&#x4E9B;Process&#x4F4D;&#x65BC;&#x5169;&#x500B;&#x7A7A;&#x9593;&#x4E2D;&#xFF1A;Docker &#x7A7A;&#x9593;&#x548C; Kubernetes &#x7A7A;&#x9593;&#x3002;&#x4F4D;&#x7F6E;&#x5167;&#x7684;&#x7D44;&#x6210;&#x90E8;&#x5206;&#x5305;&#x62EC;&#xFF1A;</p>
+<ol>
+<li>Position Monitor</li>
+<li>Inference Host</li>
+<li>Kubernetes Service</li>
+</ol>
+<p><img src="images/supplementary_information.png" alt="Supplementary Information"></p>
+<p><strong>Position Monitor</strong></p>
+<p>&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x662F;&#x4F7F;&#x7528;&#x8005;&#x89F8;&#x767C;&#x76E3;&#x63A7;&#x548C;&#x547D;&#x4EE4;&#x4ECB;&#x9762;&#x7684;&#x5730;&#x65B9;&#x3002;&#x70BA;&#x4E86;&#x59A5;&#x5584;&#x7BA1;&#x7406;&#x4F4D;&#x7F6E;&#xFF0C;Position Monitor&#x5C07;&#x6210;&#x70BA;&#x4F7F;&#x7528;&#x8005;&#x4E86;&#x89E3;&#x908A;&#x7DE3;&#x4F3A;&#x670D;&#x5668; CPU &#x548C;&#x8A18;&#x61B6;&#x9AD4;&#x8CC7;&#x6E90;&#x4F7F;&#x7528;&#x7387;&#x7684;&#x6709;&#x7528;&#x5DE5;&#x5177;&#x3002;&#x6B64;&#x5916;&#xFF0C;inference host&#x5728;&#x672A;&#x4F86;&#x7248;&#x672C;&#x5C07;&#x5177;&#x5099;&#x64F4;&#x5C55;&#x6027;&#x3002;&#x56E0;&#x6B64;&#xFF0C;Position Monitor&#x8CA0;&#x8CAC;&#x6BCF;&#x500B;Position&#x7684;&#x6C34;&#x5E73; Pod &#x81EA;&#x52D5;&#x64F4;&#x5C55;&#xFF08;HPA&#xFF09;&#x4EE5;&#x53CA;inference host&#x5167;&#x7684;&#x6A21;&#x578B;&#x7BA1;&#x7406;&#x3002;</p>
+<p><strong>Inference Host</strong></p>
+<p>inference host&#x662F;&#x5BE6;&#x969B;&#x9032;&#x884C;&#x63A8;&#x7406;&#x4EFB;&#x52D9;&#x7684;&#x5730;&#x65B9;&#x3002;inference host&#x7531;inference template&#x548C;model &#x7D44;&#x6210;&#x3002;&#x4F7F;&#x7528;&#x8005;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6211;&#x5011;&#x7684;&#x7BC4;&#x672C;&#x4F86;&#x5BE6;&#x4F5C;&#x529F;&#x80FD;&#xFF0C;&#x6216;&#x8005;&#x6309;&#x7167;&#x4ECB;&#x9762;&#x4F86;&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x6A21;&#x677F;&#x3002;&#x8A73;&#x7D30;&#x8CC7;&#x8A0A;&#x8ACB;&#x53C3;&#x95B1;&#x9801;&#x9762; <a href="https://www.notion.so/Let-s-start-to-build-an-inference-host-e0fca45d96eb4ad3b37c90d3239cda01?pvs=21" target="_blank"><strong>Let&apos;s start to build an inference host! (&#x672A;&#x5B8C;&#x6210;)</strong></a> &#xFF01;</p>
+<p><strong>Kubernetes Service</strong></p>
+<p>Pod &#x662F; Kubernetes &#x53E2;&#x96C6;&#x67B6;&#x69CB;&#x4E2D;&#x7684;&#x4E00;&#x7A2E;&#x8CC7;&#x6E90;&#x985E;&#x5225;&#x3002;&#x4E00;&#x500B; Pod &#x7531;&#x4E00;&#x500B;&#x6216;&#x591A;&#x500B;&#x5BB9;&#x5668;&#x7D44;&#x6210;&#x4EE5;&#x5F62;&#x6210;&#x5FAE;&#x670D;&#x52D9;&#x3002;&#x7576; Pod &#x555F;&#x7528;&#x6642;&#xFF0C;&#x4E3B;&#x7BC0;&#x9EDE;&#x6703;&#x5206;&#x914D;&#x4E00;&#x500B;&#x53E2;&#x96C6; IP&#x3002;&#x5118;&#x7BA1; Pod &#x53EF;&#x4EE5;&#x52D5;&#x614B;&#x90E8;&#x7F72;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5DE5;&#x4F5C;&#x7BC0;&#x9EDE;&#xFF0C;&#x4F46;&#x53E2;&#x96C6; IP &#x6703;&#x983B;&#x7E41;&#x8B8A;&#x66F4;&#xFF0C;&#x5C0E;&#x81F4;&#x7CFB;&#x7D71;&#x4E0D;&#x7A69;&#x5B9A;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981; Kubernetes &#x7684;&#x670D;&#x52D9;&#x4F86;&#x5E6B;&#x52A9;&#x6211;&#x5011;&#x900F;&#x904E;&#x6A19;&#x7C64;&#x548C;&#x9078;&#x64C7;&#x5668;&#x5C07;&#x8ACB;&#x6C42;&#x767C;&#x9001;&#x5230;&#x7279;&#x5B9A;&#x7684;&#x5FAE;&#x670D;&#x52D9;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;Kubernetes &#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x7A2E;&#x670D;&#x52D9;&#x985E;&#x578B;&#xFF1A;NodePort&#x3001;ClusterIP &#x548C; LoadBalancer &#x6A21;&#x5F0F;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x4F7F;&#x7528; LoadBalancer &#x6A21;&#x5F0F;&#x4F86;&#x5BE6;&#x73FE;&#x7C21;&#x55AE;&#x7684;&#x8CA0;&#x8F09;&#x5747;&#x8861;&#x529F;&#x80FD;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="deployment.html#edge-server-部署" class="navigation navigation-prev " aria-label="Previous page: 邊緣伺服器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../inference_host/" class="navigation navigation-next " aria-label="Next page: Inference Host">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"抽象類別階層","level":"1.2.4","depth":2,"next":{"title":"Inference Host","level":"1.3","depth":1,"path":"inference_host/README.md","ref":"./inference_host/README.md","articles":[{"title":"關於 Inference Host","level":"1.3.1","depth":2,"path":"inference_host/about_inference_host.md","ref":"./inference_host/about_inference_host.md","articles":[]},{"title":"建置 Inference Host","level":"1.3.2","depth":2,"path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md","articles":[{"title":"我可以在哪裡獲取範本？","level":"1.3.2.1","depth":3,"anchor":"#我可以在哪裡獲取範本？","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#我可以在哪裡獲取範本？","articles":[]},{"title":"如何實作推論功能？","level":"1.3.2.2","depth":3,"anchor":"#如何實作推論功能？","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#如何實作推論功能？","articles":[]},{"title":"啟動 Django 伺服器時的自檢功能","level":"1.3.2.3","depth":3,"anchor":"#啟動-django-伺服器時的自檢功能","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#啟動-django-伺服器時的自檢功能","articles":[]},{"title":"我的推論 API 的路徑是什麼？","level":"1.3.2.4","depth":3,"anchor":"#我的推論-api-的路徑是什麼？","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#我的推論-api-的路徑是什麼？","articles":[]},{"title":"不使用SDK的API文件","level":"1.3.2.5","depth":3,"anchor":"#不使用sdk的api文件","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#不使用sdk的api文件","articles":[]}]}]},"previous":{"title":"邊緣伺服器","level":"1.2.3.2","depth":3,"anchor":"#edge-server-部署","path":"inference_system/deployment.md","ref":"./inference_system/deployment.md#edge-server-部署","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","splitter","hide-element","copy-code-button"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"inference_system/abstract_class_hierarchy.md","mtime":"2024-10-22T13:23:49.118Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-22T13:24:38.364Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

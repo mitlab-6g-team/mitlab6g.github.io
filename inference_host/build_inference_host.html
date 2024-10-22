@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>建置 Inference Host · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="build_inference_host.html" />
+    
+    
+    <link rel="prev" href="about_inference_host.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    平台介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../inference_system/">
+            
+                <a href="../inference_system/">
+            
+                    
+                    推論系統
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../inference_system/architecture.html">
+            
+                <a href="../inference_system/architecture.html">
+            
+                    
+                    系統架構
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../inference_system/architecture.html">
+            
+                <a href="../inference_system/architecture.html#部屬平台（deployment-platform）">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../inference_system/architecture.html">
+            
+                <a href="../inference_system/architecture.html#邊緣伺服器（edge-server）">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../inference_system/system_requirement.html">
+            
+                <a href="../inference_system/system_requirement.html">
+            
+                    
+                    系統需求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../inference_system/system_requirement.html">
+            
+                <a href="../inference_system/system_requirement.html#部屬平台（deployment-platform）">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../inference_system/system_requirement.html">
+            
+                <a href="../inference_system/system_requirement.html#邊緣伺服器（edge-server）">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../inference_system/deployment.html">
+            
+                <a href="../inference_system/deployment.html">
+            
+                    
+                    部屬系統
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../inference_system/deployment.html">
+            
+                <a href="../inference_system/deployment.html#deployment-platform-部屬">
+            
+                    
+                    部屬平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../inference_system/deployment.html">
+            
+                <a href="../inference_system/deployment.html#edge-server-部署">
+            
+                    
+                    邊緣伺服器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../inference_system/abstract_class_hierarchy.html">
+            
+                <a href="../inference_system/abstract_class_hierarchy.html">
+            
+                    
+                    抽象類別階層
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Inference Host
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="about_inference_host.html">
+            
+                <a href="about_inference_host.html">
+            
+                    
+                    關於 Inference Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html">
+            
+                    
+                    建置 Inference Host
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html#我可以在哪裡獲取範本？">
+            
+                    
+                    我可以在哪裡獲取範本？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html#如何實作推論功能？">
+            
+                    
+                    如何實作推論功能？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html#啟動-django-伺服器時的自檢功能">
+            
+                    
+                    啟動 Django 伺服器時的自檢功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html#我的推論-api-的路徑是什麼？">
+            
+                    
+                    我的推論 API 的路徑是什麼？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="build_inference_host.html">
+            
+                <a href="build_inference_host.html#不使用sdk的api文件">
+            
+                    
+                    不使用SDK的API文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../xApp_rApp/">
+            
+                <a href="../xApp_rApp/">
+            
+                    
+                    xApp/rApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../xApp_rApp/about_xApp_rApp.html">
+            
+                <a href="../xApp_rApp/about_xApp_rApp.html">
+            
+                    
+                    關於 xApp/rApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../xApp_rApp/build_xApp_rApp.html">
+            
+                <a href="../xApp_rApp/build_xApp_rApp.html">
+            
+                    
+                    建置 xApp/rApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../user_manual/">
+            
+                <a href="../user_manual/">
+            
+                    
+                    使用手冊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue/">
+            
+                <a href="../issue/">
+            
+                    
+                    常見問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >建置 Inference Host</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6211;&#x53EF;&#x4EE5;&#x5728;&#x54EA;&#x88E1;&#x7372;&#x53D6;&#x7BC4;&#x672C;&#xFF1F;">&#x6211;&#x53EF;&#x4EE5;&#x5728;&#x54EA;&#x88E1;&#x7372;&#x53D6;&#x7BC4;&#x672C;&#xFF1F;</h1>
+<p>&#x4F7F;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x8A2A;&#x554F;&#x4EE5;&#x4E0B;&#x9023;&#x7D50;&#x4E26;&#x6AA2;&#x67E5; <strong><code>django/&lt;platform_version_tag&gt;</code></strong> &#x5206;&#x652F;&#x3002;</p>
+<p>&#x5E73;&#x53F0;&#x7248;&#x672C;&#x6A19;&#x7C64;&#x8207;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x7248;&#x672C;&#x76F8;&#x540C;&#x3002;</p>
+<p><a href="https://github.com/mitlab-6g-team/inference_template_public" target="_blank">GitHub - mitlab-6g-team/inference_template_public: Inference host template for public use</a></p>
+<h1 id="&#x5982;&#x4F55;&#x5BE6;&#x4F5C;&#x63A8;&#x8AD6;&#x529F;&#x80FD;&#xFF1F;">&#x5982;&#x4F55;&#x5BE6;&#x4F5C;&#x63A8;&#x8AD6;&#x529F;&#x80FD;&#xFF1F;</h1>
+<p>&#x7576;&#x8ACB;&#x6C42;&#x767C;&#x9001;&#x6642;&#xFF0C;&#x63A5;&#x6536;&#x8ACB;&#x6C42;&#x7684;function&#x4F4D;&#x65BC; <strong><code>main/apps/inference_exe/actors/InferenceServiceHandler</code></strong>&#xFF0C;&#x8A72;&#x90E8;&#x5206;&#x8655;&#x7406;&#x5F9E;&#x63A5;&#x6536;&#x8ACB;&#x6C42;&#x5230;&#x56DE;&#x61C9;&#x7684;&#x904E;&#x7A0B;&#x3002;&#x4F7F;&#x7528;&#x8005;&#x81EA;&#x5B9A;&#x7FA9;&#x7684;&#x529F;&#x80FD;&#x5BE6;&#x4F5C;&#x5728; <strong><code>main/apps/inference_exe/actors/services/inference</code></strong>&#xFF0C;&#x6211;&#x5011;&#x7A31;&#x4E4B;&#x70BA;&#x670D;&#x52D9;&#x51FD;&#x6578;&#x3002;</p>
+<p>&#x670D;&#x52D9;&#x51FD;&#x6578;&#x4E2D;&#x5C07;&#x5305;&#x542B;&#x5169;&#x500B;&#x985E;&#x5225;&#xFF1A;Model &#x548C; InferenceService&#x3002;</p>
+<p>&#x5C0D;&#x65BC; Model &#x985E;&#x5225;&#xFF0C;&#x985E;&#x5225;&#x5167;&#x7684;&#x529F;&#x80FD;&#x61C9;&#x7D44;&#x6210;&#x6A21;&#x578B;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7684;&#x57FA;&#x672C;&#x670D;&#x52D9;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x8005;&#x5FC5;&#x9808;&#x6839;&#x64DA;&#x4E0D;&#x540C;&#x7684;&#x4F9D;&#x8CF4;&#x548C;&#x7248;&#x672C;&#x5BE6;&#x4F5C;&#x6A21;&#x578B;&#x52A0;&#x8F09;&#x548C;&#x9810;&#x6E2C;&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x4F7F;inference host&#x6B63;&#x5E38;&#x904B;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># main/apps/inference_exe/actors/services/inference</span>
+<span class="hljs-comment"># Model Basic Functions</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;Inference Functions&quot;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model_path)</span>:</span>
+        <span class="hljs-string">&quot;the function to load model.&quot;</span>
+        self.model = load_model(model_path)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inference</span><span class="hljs-params">(self, input_data)</span>:</span>
+        <span class="hljs-string">&quot;the function to do inference.&quot;</span>
+        result = self.model.predict(input_data)
+        <span class="hljs-keyword">return</span> result
+</code></pre>
+<p>InferenceService &#x985E;&#x5225;&#x5E6B;&#x52A9;&#x4F7F;&#x7528;&#x8005;&#x9032;&#x884C;&#x63A8;&#x8AD6;&#x61C9;&#x7528;&#x3002;&#x6211;&#x5011;&#x5DF2;&#x7D93;&#x70BA;&#x4F7F;&#x7528;&#x8005;&#x898F;&#x5283;&#x4E86;&#x57FA;&#x672C;&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x5B8C;&#x6210;&#x63A8;&#x8AD6;&#x904E;&#x7A0B;&#x3002;&#x8ACB;&#x5728; <code>input_data_transform()</code> &#x4E2D;&#x5BE6;&#x4F5C;&#x6578;&#x64DA;&#x9810;&#x8655;&#x7406;&#x6216;&#x6578;&#x64DA;&#x8F49;&#x63DB;&#x904E;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># main/apps/inference_exe/actors/services/inference</span>
+<span class="hljs-comment"># Called by Main Functions</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InferenceService</span><span class="hljs-params">()</span>:</span>
+    model = <span class="hljs-keyword">None</span>
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">load_model</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">if</span> InferenceService.model <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            model_path = default_env.MODEL_SAVE_PATH + default_env.MODEL_FILE_NAME
+            InferenceService.model = Model(model_path)
+        <span class="hljs-keyword">return</span> InferenceService.model
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">input_data_transform</span><span class="hljs-params">(input_data)</span>:</span>
+        <span class="hljs-comment">#data processing here</span>
+        transformed_data = input_data
+        <span class="hljs-keyword">return</span> transformed_data
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">inference</span><span class="hljs-params">(input_data)</span>:</span>
+        <span class="hljs-keyword">try</span>:
+            transform_data = InferenceService.input_data_transform(input_data)
+            inference_result = InferenceService.model.inference(transform_data)
+            <span class="hljs-keyword">return</span> {<span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>, <span class="hljs-string">&quot;value&quot;</span>: str(inference_result.tolist())}
+
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+            log_writer(log_level=<span class="hljs-string">&apos;ERROR&apos;</span>, func=InferenceService.inference, message=str(e))
+            <span class="hljs-keyword">return</span> {<span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;error&quot;</span>, <span class="hljs-string">&quot;message&quot;</span>: str(e)}
+</code></pre>
+<h2 id="&#x555F;&#x52D5;-django-&#x4F3A;&#x670D;&#x5668;&#x6642;&#x7684;&#x81EA;&#x6AA2;&#x529F;&#x80FD;">&#x555F;&#x52D5; Django &#x4F3A;&#x670D;&#x5668;&#x6642;&#x7684;&#x81EA;&#x6AA2;&#x529F;&#x80FD;</h2>
+<p>&#x7576; Django &#x4F3A;&#x670D;&#x5668;&#x555F;&#x52D5;&#x6642;&#xFF0C;<code>main/apps/inference_exe/apps.py</code> &#x4E2D;&#x7684; ready &#x51FD;&#x6578;&#x5C07;&#x88AB;&#x57F7;&#x884C;&#x3002;&#x7CFB;&#x7D71;&#x6703;&#x5728;&#x6BCF;&#x6B21; Pod &#x555F;&#x52D5;&#x6642;&#x81EA;&#x52D5;&#x904B;&#x884C; ready &#x51FD;&#x6578;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ready</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">from</span> .services.inference <span class="hljs-keyword">import</span> InferenceService
+
+        <span class="hljs-keyword">try</span>: 
+            model = InferenceService.load_model()
+            ...
+</code></pre>
+<p>&#x4E00;&#x65E6;&#x5065;&#x5EB7;&#x6AA2;&#x67E5;&#x901A;&#x904E;&#xFF0C;&#x7CFB;&#x7D71;&#x5C07;&#x5411;&#x90E8;&#x7F72;&#x5E73;&#x53F0;&#x767C;&#x9001;&#x6210;&#x529F;&#x6D88;&#x606F;&#xFF0C;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x4E86;&#x89E3;&#x76E3;&#x63A7;&#x4E2D;&#x7684; CPU &#x548C;&#x8A18;&#x61B6;&#x9AD4;&#x4F7F;&#x7528;&#x7387;&#x3002;</p>
+<h2 id="&#x6211;&#x7684;&#x63A8;&#x8AD6;-api-&#x7684;&#x8DEF;&#x5F91;&#x662F;&#x4EC0;&#x9EBC;&#xFF1F;">&#x6211;&#x7684;&#x63A8;&#x8AD6; API &#x7684;&#x8DEF;&#x5F91;&#x662F;&#x4EC0;&#x9EBC;&#xFF1F;</h2>
+<p>&#x70BA;&#x4E86;&#x5C07; API &#x8DEF;&#x5F91;&#x8A3B;&#x518A;&#x5230; Kubernetes &#x548C; Kong Gateway&#xFF0C;&#x4E26;&#x81EA;&#x52D5;&#x5F9E;&#x90E8;&#x7F72;&#x5E73;&#x53F0;Dashboard&#x5EFA;&#x7ACB;&#x63A8;&#x8AD6;&#x670D;&#x52D9;&#xFF0C;API &#x7684; URL &#x5FC5;&#x9808;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x7121;&#x8AD6;&#x529F;&#x80FD;&#x5982;&#x4F55;&#x5BE6;&#x4F5C;&#x3002;</p>
+<p>&#x4EE5; <code>main/apps/inference_exe/api/urls.py</code> &#x4E2D;&#x7684;&#x53C3;&#x6578;&#x70BA;&#x4F8B;&#xFF0C;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> main.apps.inference_exe.actors <span class="hljs-keyword">import</span> InferenceServiceHandler
+
+<span class="hljs-comment"># Don&apos;t change the path here</span>
+module_name = <span class="hljs-string">&apos;inference_exe&apos;</span>
+
+urlpatterns = [
+    path(f<span class="hljs-string">&apos;{module_name}/InferenceServiceHandler/get_inference_result&apos;</span>, InferenceServiceHandler.get_inference_result)
+]
+</code></pre>
+<p>Inference template&#x4F7F;&#x7528;&#x8005;&#x53EA;&#x9700;&#x95DC;&#x5FC3;&#x5982;&#x4F55;&#x5229;&#x7528;&#x6211;&#x5011;&#x958B;&#x767C;&#x7684; SDK &#x9032;&#x884C;&#x63A8;&#x8AD6;&#x3002;SDK &#x7684;&#x4ECB;&#x7D39;&#x5728; <a href="https://www.notion.so/xApp-rApp-61e66013c6c64f0988dccdbcdf742225?pvs=21" target="_blank"><strong>&#x95DC;&#x65BC; xApp/rApp</strong></a> &#x3001; <a href="https://www.notion.so/AI-ML-Mitlab-xApp-rApp-SDK-106b65a4cedb8018bed1e87eda22bf49?pvs=21" target="_blank">AI/ML&#x5E73;&#x53F0;-Mitlab xApp/rApp SDK (&#x5C1A;&#x672A;&#x555F;&#x7528;)</a> </p>
+<h1 id="&#x4E0D;&#x4F7F;&#x7528;sdk&#x7684;api&#x6587;&#x4EF6;">&#x4E0D;&#x4F7F;&#x7528;SDK&#x7684;API&#x6587;&#x4EF6;</h1>
+<h2 id="&#x63A8;&#x8AD6;&#x670D;&#x52D9;">&#x63A8;&#x8AD6;&#x670D;&#x52D9;</h2>
+<p>&#x6B64; API &#x5141;&#x8A31;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x900F;&#x904E;API&#x53D6;&#x5F97;&#x6A21;&#x578B;&#x63A8;&#x8AD6;&#x7D50;&#x679C;</p>
+<ul>
+<li><p>API Endpoint</p>
+<pre><code>  POST http://&lt;host_ip&gt;:8000/inference-service-&lt;position_uid&gt;
+</code></pre></li>
+<li><p>Request Header</p>
+<pre><code class="lang-json">  {
+      <span class="hljs-string">&quot;Content-Type&quot;</span>: <span class="hljs-string">&quot;application/json&quot;</span>
+  }
+</code></pre>
+</li>
+<li><p>Request Body</p>
+<pre><code class="lang-json">  <span class="hljs-comment">// Required payload: </span>
+  <span class="hljs-comment">// value</span>
+
+  {
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;any_type_of_raw_data&quot;</span>
+  }
+</code></pre>
+</li>
+<li><p>Example CURL Request</p>
+<pre><code class="lang-bash">  curl --request POST \
+    --url http://&lt;host_ip&gt;:&lt;backend_entrypoint&gt;/api/inference_exe/InferenceServiceHandler/get_inference_result \
+    --header <span class="hljs-string">&apos;Content-Type: application/json&apos;</span> \
+    --data <span class="hljs-string">&apos;{
+    &quot;value&quot;: &quot;any_type_of_raw_data&quot;
+  }&apos;</span>
+</code></pre>
+</li>
+<li><p>Response</p>
+<ul>
+<li><p>200 OK</p>
+<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;&lt;inferenc_result&gt;&quot;</span>
+  }
+</code></pre>
+</li>
+<li><p>400 ERROR</p>
+<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;error&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Missing &apos;value&apos; key in request data&quot;</span>
+  }
+</code></pre>
+<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;error&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;Invalid JSON in request body&quot;</span>
+  }
+</code></pre>
+</li>
+<li><p>422 ERROR</p>
+<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;error&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&lt;message_from_model&gt;&quot;</span>
+  }
+</code></pre>
+</li>
+<li>500 ERROR<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;error&quot;</span>,
+    <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;An unexpected error occurred&quot;</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="about_inference_host.html" class="navigation navigation-prev " aria-label="Previous page: 關於 Inference Host">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="build_inference_host.html#我可以在哪裡獲取範本？" class="navigation navigation-next " aria-label="Next page: 我可以在哪裡獲取範本？">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"建置 Inference Host","level":"1.3.2","depth":2,"next":{"title":"我可以在哪裡獲取範本？","level":"1.3.2.1","depth":3,"anchor":"#我可以在哪裡獲取範本？","path":"inference_host/build_inference_host.md","ref":"./inference_host/build_inference_host.md#我可以在哪裡獲取範本？","articles":[]},"previous":{"title":"關於 Inference Host","level":"1.3.1","depth":2,"path":"inference_host/about_inference_host.md","ref":"./inference_host/about_inference_host.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","splitter","hide-element","copy-code-button"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"inference_host/build_inference_host.md","mtime":"2024-10-22T13:23:49.118Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-22T13:24:38.364Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
