@@ -1,5 +1,6 @@
 {
     "plugins": [
+        "expandable-chapters",
         "chapter-fold",
         "splitter",
         "hide-element"
