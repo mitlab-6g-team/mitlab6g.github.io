@@ -1,0 +1,51 @@
+name: Build gitbook and deploy to https://mitlab-6g-team.github.io/mitlab6g.github.io/
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  main-to-gitbook_source:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Rename directory
+        env:
+            github_repository_name: ${{ github.event.repository.name }}
+        run: |
+          mv ${github_repository_name} not_compiled_books
+
+      - name: build image for gitbook instruction
+        run: |
+          docker build . -t gitbook-server:latest
+
+      - name: install gitbook-plugins
+        run: |
+          docker run --rm -v "$PWD/not_compiled_books:/gitbook" gitbook-server gitbook install
+
+      - name: compile books
+        run: |
+          docker run --rm -v "$PWD/not_compiled_books:/gitbook" gitbook-server gitbook build
+
+      - name: push _book to branch gitbook_source
+        env:
+          REF: github.com/${{github.repository}}
+          MYEMAIL: talon6605@gmail.com
+          MYNAME: Fail-Man
+        run: |
+          cd $PWD/not_compiled_books/_book
+          git config --global user.email "${MYEMAIL}"
+          git config --global user.name "${MYNAME}"
+          git init
+          git remote add origin https://${REF}
+          git add . 
+          git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+          git branch -M main
+          git push --force --quiet "https://${REF}" main:gitbook_source
