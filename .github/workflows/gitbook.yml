@@ -1,4 +1,4 @@
-name: Build gitbook and deploy to https://mitlab-6g-team.github.io/mitlab6g.github.io/
+name: create gitbook source
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  main-to-gitbook_source:
+  gitbook:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,7 @@ jobs:
         env:
             github_repository_name: ${{ github.event.repository.name }}
         run: |
+          ls
           mv ${github_repository_name} not_compiled_books
 
       - name: build image for gitbook instruction
