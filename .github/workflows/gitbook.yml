@@ -25,6 +25,7 @@ jobs:
           mkdir -p gitbook
           mv SUMMARY.md gitbook/SUMMARY.md
           mv README.md gitbook/README.md
+          mv book.json gitbook/book.json
           bash mv_folder.sh
 
       - name: install gitbook-plugins
