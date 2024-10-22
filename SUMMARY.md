@@ -17,6 +17,6 @@
     * [啟動 Django 伺服器時的自檢功能](./inference_host/build_inference_host.md#啟動-django-伺服器時的自檢功能)
     * [我的推論 API 的路徑是什麼？](./inference_host/build_inference_host.md#我的推論-api-的路徑是什麼？)
     * [不使用SDK的API文件](./inference_host/build_inference_host.md#不使用sdk的api文件)
-* [xApp/rApp](./inference_host/README.md)
+* [xApp/rApp](./xApp_rApp/README.md)
   * [關於 xApp/rApp](./xApp_rApp/about_xApp_rApp.md)
   * [建置 xApp/rApp](./xApp_rApp/build_xApp_rApp.md)
