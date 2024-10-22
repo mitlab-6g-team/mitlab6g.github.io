@@ -37,6 +37,7 @@ jobs:
         run: |
           sudo chmod 777 -R _book
           cd _book
+          ls
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
